@@ -1,62 +1,114 @@
-body{
+body {
     background-color: navy;
     color: bisque;
 }
 
-main{
+main {
+    width: 62.5%;
+    margin: auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 4fr 1fr;
-    grid-template-areas: 
-    "h h"
-    "a n"    
-    "f f";
+    grid-template-areas:
+        "h h"
+        "a n"
+        "f f";
 }
 
-.box{
+.box {
     background-color: gray;
 }
 
-header{
+header {
     grid-area: h;
+    text-align: center;
+    height: 10vh;
+    background: url("https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=1380&t=st=1675076619~exp=1675077219~hmac=4ab460e6900af2a40f0ee0b96ce604251151db6d3277f550f7ca80cc22caf42a");
 }
 
-article{
+article {
     grid-area: a;
 }
 
-nav{
+nav {
     grid-area: n;
 }
 
-footer{
+footer {
     grid-area: f;
 }
 
-@media all and (max-width: 1000px){
-    main{
+fieldset {
+    margin: 15px;
+    padding: 15px;
+}
+
+legend {
+    width: 50%;
+    text-align: center;
+    background-color: beige;
+    border-radius: 5px;
+    color: black;
+    padding: 2px 30px;
+}
+
+label {
+    width: 30%;
+    float: left;
+}
+
+input,
+label {
+    margin-top: 20px;
+}
+
+#colour::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: black;
+    border-radius: 8px;
+}
+
+#szam {
+    width: 5%;
+}
+
+#sendcon {
+    text-align: center;
+    padding: 10px;
+}
+
+#send {
+    padding: 6px;
+    margin: auto;
+    box-shadow: 0px 2px 3px 1px #000000;
+}
+
+@media all and (max-width: 1000px) {
+    main {
         grid-template-columns: 2fr 1fr;
     }
 
-    .box{
+    .box {
         background-color: green;
     }
 
 }
 
-@media all and (max-width: 600px){
-    main{
+@media all and (max-width: 600px) {
+    main {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-    "h"
-    "n"
-    "a"    
-    "f";
+        grid-template-areas:
+            "h"
+            "n"
+            "a"
+            "f";
     }
 
-    .box{
+    .box {
         background-color: goldenrod;
     }
 
 }
-

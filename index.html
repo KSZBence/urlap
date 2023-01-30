@@ -10,17 +10,32 @@
 </head>
 
 <main>
+
     <body>
         <header class="box">
             <h1>Űrlapok</h1>
         </header>
         <article class="box">
             <form action="#" method="post">
-                <label for="vNev">Vezetéknév</label>
-                <input type="text" id="vNev" name="vezetekNev">
-                <label for="kNev">Vezetéknév</label>
-                <input type="text" id="kNev" name="keresztNev">
-                <input type="submit" value="küldés">
+                <fieldset>
+                    <legend>Adatok</legend>
+                    <label for="vNev">Vezetéknév:</label>
+                    <input type="text" id="vNev" name="vNev" placeholder="Vezetéknév">
+                    <br>
+                    <label for="kNev">Keresztnév:</label>
+                    <input type="text" id="kNev" name="kNev" placeholder="Keresztnév">
+                </fieldset>
+                <fieldset>
+                    <legend>Kedvencek</legend>
+                    <label for="colour">Kedvenc szín:</label>
+                    <input type="color" id="colour" name="colour" placeholder="Vezetéknév">
+                    <br>
+                    <label for="csuszka">Kedvenc szám:</label>
+                    <input type="range" id="csuszka" name="csuszka" placeholder="Vezetéknév">
+                    <input type="text" id="szam" name="csuszka" placeholder="Szám">
+                </fieldset>
+                <div id="sendcon"><input id="send" type="submit" value="küldés"></div>
+
             </form>
         </article>
         <nav class="box">
