@@ -31,8 +31,10 @@
                     <input type="color" id="colour" name="colour" placeholder="Vezetéknév">
                     <br>
                     <label for="csuszka">Kedvenc szám:</label>
-                    <input type="range" id="csuszka" name="csuszka" placeholder="Vezetéknév">
-                    <input type="text" id="szam" name="csuszka" placeholder="Szám">
+                    <input type="range" id="csuszka" name="csuszka" value="50"
+                        oninput="this.form.amountInput.value = this.value">
+                    <input type="number" id="szam" name="csuszka" value="50"
+                    oninput="this.form.amountInput.value = this.value">
                 </fieldset>
                 <div id="sendcon"><input id="send" type="submit" value="küldés"></div>
 
